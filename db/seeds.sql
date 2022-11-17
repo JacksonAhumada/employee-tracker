@@ -1,12 +1,12 @@
 INSERT INTO department (name)
-VALUES ('Sales'),
-('Engineering'),
-('Drafting');
+VALUES('Engineering'),
+('Drafting'),
+ ('Sales');
 
 INSERT INTO  role (title, salary, department_id)
-VALUES ('Engineering Manager', 150000, 2),
-('Drafter 1', 50000, 3),
-('Sales Lead', 60000, 1);
+VALUES ('Engineering Manager', 150000, 1),
+('Drafter 1', 50000, 2),
+('Sales Lead', 60000, 3);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('Bryan', 'Kniss', 1, NULL),

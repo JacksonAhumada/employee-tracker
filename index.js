@@ -1,5 +1,5 @@
-const inquirer = require("inquirer");
-const { connection, updateEmployeeRole } = require("./db");
+const inquirer = require('inquirer');
+const { connection } = require('./db');
 require("console.table");
 const db = require("./db");
 

@@ -15,6 +15,7 @@ class Queries{
 
     getAllEmployee() {
         return this.connection.promise().query('select employee.id, employee.first_name, employee.last_name, role.title, department.name, role.salary, CONCAT(manager.first_name, " " ,manager.last_name) AS Manager from employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id LEFT JOIN employee AS manager ON manager.id = employee.manager_id ')
+        
     }
 
     createDepartment(department) {
